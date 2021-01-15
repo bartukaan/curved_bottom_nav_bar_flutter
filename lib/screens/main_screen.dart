@@ -1,4 +1,6 @@
+import 'package:common_bottom_navigation_bar/bluetooths/device_list_screen.dart';
 import 'package:common_bottom_navigation_bar/screens/screen2.dart';
+import 'package:common_bottom_navigation_bar/utilities/flushbar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -8,6 +10,7 @@ import '../pages/home_page.dart';
 import '../pages/profile_page.dart';
 
 class MainScreen extends StatefulWidget {
+
   @override
   _MainScreenState createState() => _MainScreenState();
 }
@@ -61,7 +64,8 @@ class _MainScreenState extends State<MainScreen> {
           CalendarPage(
             onNext: _next,
           ),
-          ProfilePage(),
+        //  ProfilePage(),
+          DevicesListScreen(),
         ].elementAt(index);
       },
     };
